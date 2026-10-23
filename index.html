@@ -34,7 +34,7 @@
 
 <h1>プライバシーポリシー / Privacy Policy</h1>
 <p class="meta">GradeNova ／ 提供者: ARS, K.K.</p>
-<p class="meta">最終更新日 / Last updated: 2026-06-23 ／ お問い合わせ: <a href="mailto:developer@ars-dev.co.jp">developer@ars-dev.co.jp</a></p>
+<p class="meta">最終更新日 / Last updated: 2026-10-23 ／ お問い合わせ: <a href="mailto:developer@ars-dev.co.jp">developer@ars-dev.co.jp</a></p>
 
 <hr>
 
@@ -47,7 +47,8 @@
 <ul>
   <li><strong>学習コンテンツ（テキスト）</strong>: 会話練習や読解の解答など、ユーザーが入力・生成したテキストを、AIによるフィードバック生成のため当社のバックエンドを経由して Anthropic 社の Claude API に送信します。</li>
   <li><strong>音声（マイク）</strong>: 発音練習のためにマイクで録音した音声を使用します。音声認識（文字起こし）には Apple の音声認識機能を利用し、この過程で音声が Apple のサーバーに送信される場合があります。録音音声を当社が収集・保存することはありません。</li>
-  <li><strong>アプリ内設定・学習進捗</strong>: 学習プラン、目標、ダウンロード状態などは端末内（ローカルストレージ）にのみ保存されます。</li>
+  <li><strong>録音音声データのダウンロード</strong>: プレミアム会員が「設定 → 音声データ」から級ごとの録音音声を取得する際、当社の配信サーバー（Cloudflare 社の基盤で運用）に接続します。このとき通常の通信と同様に、IP アドレスなどの接続情報が配信のために処理される場合がありますが、当社はこれを個人の特定・追跡・広告に利用しません。取得した音声は端末内に保存され、設定からいつでも削除できます。この通信でユーザーの学習内容や個人情報を送信することはありません。</li>
+  <li><strong>アプリ内設定・学習進捗</strong>: 学習プラン、目標、読んだ本文や答え合わせ済みの会話の記録、ダウンロード状態などは端末内（ローカルストレージ）にのみ保存されます。</li>
 </ul>
 
 <h3>3. 情報を利用する目的</h3>
@@ -58,13 +59,13 @@
 <ul>
   <li><strong>Anthropic, PBC（Claude API）</strong>: 学習テキストの処理。</li>
   <li><strong>Apple Inc.（音声認識）</strong>: 音声の文字起こし。</li>
-  <li><strong>Cloudflare, Inc.（バックエンド基盤）</strong>: 当社プロキシの実行。</li>
+  <li><strong>Cloudflare, Inc.（バックエンド基盤）</strong>: 当社プロキシの実行と、録音音声データの配信。</li>
 </ul>
 <p>これらの提供は機能提供に必要な範囲に限られ、ユーザーを特定する目的での販売や共有は行いません。これらの第三者は、当社と同等以上の水準でデータを保護することが求められ、各社のプライバシーポリシーに従ってデータを取り扱います。Anthropic 社は、API 経由で送信されたデータをモデルの学習には使用しません。</p>
 <p>AI機能を初めて利用する際に、どのデータがどの第三者（Anthropic 社）に送信されるかをアプリ内で明示し、ユーザーの同意を得たうえで送信を行います。同意しない場合、AI機能は利用されず、データは送信されません。</p>
 
 <h3>5. データの保存期間</h3>
-<p>学習設定・進捗は端末内にのみ保存され、アプリの削除で消去されます。AIへ送信したテキストの取り扱いは各提供事業者のポリシーに従います。</p>
+<p>学習設定・進捗とダウンロードした録音音声は端末内にのみ保存され、アプリの削除で消去されます。AIへ送信したテキストの取り扱いは各提供事業者のポリシーに従います。</p>
 
 <h3>6. 子どものプライバシー</h3>
 <p>本アプリは特定の年齢層を対象に個人情報を収集する設計ではありません。AIにより生成されるコンテンツを含むため、保護者の方は必要に応じて利用を監督してください。</p>
@@ -89,18 +90,19 @@
 <ul>
   <li><strong>Learning content (text):</strong> Text you enter or generate (e.g., conversation practice and reading answers) is sent through our backend to Anthropic's Claude API to produce AI feedback.</li>
   <li><strong>Audio (microphone):</strong> Microphone audio is used for pronunciation practice. Speech-to-text uses Apple's speech recognition, which may transmit audio to Apple's servers. We do not collect or store your audio recordings.</li>
-  <li><strong>In-app settings &amp; progress:</strong> Study plans, goals, and download state are stored only on your device (local storage).</li>
+  <li><strong>Recorded audio downloads:</strong> When a Premium member downloads recorded audio for a grade (Settings → Audio data), the App connects to our delivery server (run on Cloudflare). As with any network request, connection information such as your IP address may be processed to deliver the files; we do not use it to identify or track you or for advertising. Downloaded audio is stored on your device and can be deleted in Settings at any time. No learning content or personal information is sent in this request.</li>
+  <li><strong>In-app settings &amp; progress:</strong> Study plans, goals, records of passages read and dialogues checked, and download state are stored only on your device (local storage).</li>
 </ul>
 
 <h3>3. How We Use Information</h3>
 <p>Information is used solely to provide the learning features (conversation generation, explanations, pronunciation practice, feedback). We do not use it for advertising or tracking.</p>
 
 <h3>4. Third Parties</h3>
-<p>To provide features we use: <strong>Anthropic, PBC (Claude API)</strong> for processing learning text; <strong>Apple Inc.</strong> for speech recognition; <strong>Cloudflare, Inc.</strong> to run our backend proxy. We do not sell or share data to identify users. These third parties are required to protect data to a standard equal to or stronger than ours and handle it under their own privacy policies. Anthropic does not use data sent via its API to train its models.</p>
+<p>To provide features we use: <strong>Anthropic, PBC (Claude API)</strong> for processing learning text; <strong>Apple Inc.</strong> for speech recognition; <strong>Cloudflare, Inc.</strong> to run our backend proxy and deliver recorded audio. We do not sell or share data to identify users. These third parties are required to protect data to a standard equal to or stronger than ours and handle it under their own privacy policies. Anthropic does not use data sent via its API to train its models.</p>
 <p>The first time you use an AI feature, the app discloses in-app what data is sent and to which third party (Anthropic), and obtains your consent before sending. If you do not consent, AI features are not used and no data is sent.</p>
 
 <h3>5. Data Retention</h3>
-<p>Settings and progress live only on your device and are removed when you delete the App. Text sent to AI is handled per each provider's policy.</p>
+<p>Settings, progress and downloaded audio live only on your device and are removed when you delete the App. Text sent to AI is handled per each provider's policy.</p>
 
 <h3>6. Children's Privacy</h3>
 <p>The App is not designed to collect personal information from a specific age group. Because it includes AI-generated content, guardians should supervise use as appropriate.</p>
